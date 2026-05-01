@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN javac Server.java
+RUN javac src/main/java/Server.java
 
-CMD ["java", "Server"]
+CMD ["java", "-cp", "src/main/java", "Server"]
